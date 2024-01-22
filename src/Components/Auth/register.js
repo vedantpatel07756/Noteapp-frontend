@@ -41,53 +41,56 @@ export default function Register(params) {
   };
     return(
         <>
-           <div className="flex items-center justify-center h-screen">
-      <form className="bg-white p-8 w-2/4 shadow-md rounded" onSubmit={handleSignUp}>
-        <h2 className="text-2xl font-bold mb-4">Sign Up</h2>
-        <span className="text-red-500">{error}</span>
-        <div className="mb-4">
-          <label htmlFor="email" className="block text-gray-700 text-sm font-bold mb-2">
-            Username
-          </label>
-          <input
-            type="text"
-            id="email"
-            name="email"
-            value={email}
-            onChange={(e) => setUsername(e.target.value)}
-            className="border rounded w-full py-2 px-3"
-            required
-          />
-        </div>
-        <div className="mb-4">
-          <label htmlFor="password" className="block text-gray-700 text-sm font-bold mb-2">
-            Password
-          </label>
-          <input
-            type="password"
-            id="password"
-            name="password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            className="border rounded w-full py-2 px-3"
-            required
-          />
-        </div>
-        
-        <div className="flex space-x-5">
-        <button
-          type="submit"
-          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-        >
-          Sign Up
-        </button>
-
-        <Link to="/login">
-        <button  className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded "> Sign In </button>
-        </Link>
-        </div>
-      </form>
+    <div className="flex items-center justify-center h-screen">
+  <form className="bg-white p-6 sm:p-8 md:p-10 lg:w-2/3 xl:w-1/2 shadow-md rounded" onSubmit={handleSignUp}>
+    <h2 className="text-2xl font-bold mb-4">Sign Up</h2>
+    <span className="text-red-500">{error}</span>
+    <div className="mb-4">
+      <label htmlFor="email" className="block text-gray-700 text-sm font-bold mb-2">
+        Username
+      </label>
+      <input
+        type="text"
+        id="email"
+        name="email"
+        value={email}
+        onChange={(e) => setUsername(e.target.value)}
+        className="border rounded w-full py-2 px-3"
+        required
+      />
     </div>
+    <div className="mb-4">
+      <label htmlFor="password" className="block text-gray-700 text-sm font-bold mb-2">
+        Password
+      </label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        value={password}
+        onChange={(e) => setPassword(e.target.value)}
+        className="border rounded w-full py-2 px-3"
+        required
+      />
+    </div>
+
+    <div className="flex flex-col sm:flex-row sm:items-center sm:space-x-5">
+      <button
+        type="submit"
+        className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mb-4 sm:mb-0"
+      >
+        Sign Up
+      </button>
+
+      <Link to="/login">
+        <button className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+          Sign In
+        </button>
+      </Link>
+    </div>
+  </form>
+</div>
+
         </>
     );
 };
