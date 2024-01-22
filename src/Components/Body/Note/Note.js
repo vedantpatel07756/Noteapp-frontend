@@ -17,7 +17,7 @@ const user_id = queryParams.get('user_id');
                 return;
               }
            
-          const response = await fetch(`http://127.0.0.1:5000/deletenote/${task.id}?user_id=${user_id}`, {
+          const response = await fetch(`https://noteappbackend-mma5.onrender.com/deletenote/${task.id}?user_id=${user_id}`, {
             method: 'DELETE',
           });
     
