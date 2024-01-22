@@ -62,33 +62,33 @@ export default function Addnote({state,set,fetchdata}) {
       };
 
     return(
-       
       <div className="sm:w-full md:w-full lg:w-full xl:w-full h-full m-0 p-0 top-0 bottom-0 bg-[#d4d6d644] absolute" style={{ display: state ? "block" : "none" }}>
-      <div className="sm:w-11/12 md:w-10/12 lg:w-8/12 xl:w-6/12 h-[50vh] bg-white fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 p-5 rounded-md">
-          <div className="head flex justify-between text-base font-semibold font-sans text-black-500">
-              <div>ADD NOTE</div>
-              <button onClick={set}><i className="fa-solid fa-x font-bold hover:text-red-600"></i></button>
-          </div>
-          <hr className="mt-2" />
-          <form onSubmit={handleSubmit} className="mt-2">
-              <label htmlFor="" className="font-semibold text-lg mt-2"> Date :</label>
-              <input type="date" name="date" id="date" defaultValue={formData.date} onChange={handleChange} required />
-              <label htmlFor="" className="font-semibold text-lg mt-5 ml-5">Type : </label>
-              <select name="type" id="type" defaultValue={formData.type} onChange={handleChange} required>
-                  <option defaultValue="Select">__Select__</option>
-                  <option defaultValue="Project">Project</option>
-                  <option defaultValue="Personal">Personal</option>
-                  <option defaultValue="Business">Business</option>
-              </select> <br />
-              <label htmlFor="" className="font-semibold text-lg mt-10">Title:</label>
-              <input type="text" name="title" id="title" placeholder=" Enter Title .." defaultValue={formData.title} onChange={handleChange} required /> <br />
-              <label htmlFor="" className="font-semibold text-lg mt-2">Description:</label><br />
-              <textarea name="para" id="para" cols="60" rows="5" placeholder="Enter Description..." defaultValue={formData.para} onChange={handleChange} required></textarea>
-              <br />
-              <button type="submit" className="px-5 text-base font-semibold font-sans text-white rounded-md p-1 bg-[#8981D8]">ADD</button>
-          </form>
+      <div className="sm:w-full md:w-10/12 lg:w-8/12 xl:w-6/12 h-[50vh] bg-white fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 p-5 rounded-md">
+        <div className="head flex justify-between text-base font-semibold font-sans text-black-500">
+          <div>ADD NOTE</div>
+          <button onClick={set}><i className="fa-solid fa-x font-bold hover:text-red-600"></i></button>
+        </div>
+        <hr className="mt-2" />
+        <form onSubmit={handleSubmit} className="mt-2">
+          <label htmlFor="" className="font-semibold text-lg mt-2"> Date :</label>
+          <input type="date" name="date" id="date" defaultValue={formData.date} onChange={handleChange} required />
+          <label htmlFor="" className="font-semibold text-lg mt-5 ml-5">Type : </label>
+          <select name="type" id="type" defaultValue={formData.type} onChange={handleChange} required>
+            <option defaultValue="Select">__Select__</option>
+            <option defaultValue="Project">Project</option>
+            <option defaultValue="Personal">Personal</option>
+            <option defaultValue="Business">Business</option>
+          </select> <br />
+          <label htmlFor="" className="font-semibold text-lg mt-5">Title:</label>
+          <input type="text" name="title" id="title" placeholder=" Enter Title .." defaultValue={formData.title} onChange={handleChange} required /> <br />
+          <label htmlFor="" className="font-semibold text-lg mt-2">Description:</label><br />
+          <textarea name="para" id="para" cols="60" rows="5" placeholder="Enter Description..." defaultValue={formData.para} onChange={handleChange} required></textarea>
+          <br />
+          <button type="submit" className="px-5 text-base font-semibold font-sans text-white rounded-md p-1 bg-[#8981D8] mt-5">ADD</button>
+        </form>
       </div>
-  </div>
+    </div>
+    
   
     );
 };
