@@ -71,18 +71,18 @@ export default function Addnote({state,set,fetchdata}) {
     <hr className="mt-2" />
     <form onSubmit={handleSubmit} className="mt-2">
       <label htmlFor="" className="font-semibold text-lg mt-2"> Date :</label>
-      <input type="date" name="date" id="date" defaultValue={formData.date} onChange={handleChange} required />
+      <input type="date" name="date" id="date" defaultValue={formData.date} onChange={handleChange} required />  <br />
       <label htmlFor="" className="font-semibold text-lg mt-2">Type : </label>
       <select name="type" id="type" defaultValue={formData.type} onChange={handleChange} required>
         <option defaultValue="Select">__Select__</option>
         <option defaultValue="Project">Project</option>
         <option defaultValue="Personal">Personal</option>
         <option defaultValue="Business">Business</option>
-      </select>
+      </select> <br />
       <label htmlFor="" className="font-semibold text-lg mt-2">Title:</label>
-      <input type="text" name="title" id="title" placeholder=" Enter Title .." defaultValue={formData.title} onChange={handleChange} required />
+      <input type="text" name="title" id="title" placeholder=" Enter Title .." defaultValue={formData.title} onChange={handleChange} required /> <br />
       <label htmlFor="" className="font-semibold text-lg mt-2">Description:</label>
-      <textarea name="para" id="para" cols="60" rows="5" placeholder="Enter Description..." defaultValue={formData.para} onChange={handleChange} required></textarea>
+      <textarea name="para" id="para" cols="60" rows="5" placeholder="Enter Description..." defaultValue={formData.para} onChange={handleChange} required></textarea> <br />
       <button type="submit" className="px-5 text-base font-semibold font-sans text-white rounded-md p-1 bg-[#8981D8] mt-5">ADD</button>
     </form>
   </div>
