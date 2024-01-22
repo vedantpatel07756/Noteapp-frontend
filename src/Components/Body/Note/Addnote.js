@@ -62,9 +62,9 @@ export default function Addnote({state,set,fetchdata}) {
       };
 
     return(
-      <div className="sm:w-full md:w-full lg:w-full xl:w-full h-full m-0 p-0 top-0 bottom-0 bg-[#d4d6d644] absolute" style={{ display: state ? "block" : "none" }}>
+      <div className="sm:px-20 sm:w-full md:w-full lg:w-full xl:w-full h-full m-0 p-0 top-0 bottom-0 bg-[#d4d6d644] absolute" style={{ display: state ? "block" : "none" }}>
   <div className="sm:w-11/12 md:w-10/12 lg:w-8/12 xl:w-6/12 sm:h-[70vh] md:h-[80vh] lg:h-[90vh] xl:h-[90vh] bg-white fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 p-5 rounded-md">
-    <div className="head flex justify-between text-base font-semibold font-sans text-black-500">
+    <div className=" head flex justify-between text-base font-semibold font-sans text-black-500">
       <div>ADD NOTE</div>
       <button onClick={set}><i className="fa-solid fa-x font-bold hover:text-red-600"></i></button>
     </div>
