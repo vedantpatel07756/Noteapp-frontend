@@ -11,7 +11,7 @@ export default function Login(params) {
     setLoggedInUser(user_id);
     console.log(user_id);
     // Construct the URL with the user_id
-    const redirectURL = `http://localhost:3000/task?user_id=${user_id}&user_name=${user_name}`;
+    const redirectURL = `https://noteappfrontend.onrender.com/task?user_id=${user_id}&user_name=${user_name}`;
     
     // Redirect to the new URL
     window.location.href = redirectURL;

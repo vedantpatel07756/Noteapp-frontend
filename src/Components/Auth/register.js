@@ -25,7 +25,7 @@ export default function Register(params) {
   
         if (response.ok) {
           console.log('Registration successful');
-          const redirectURL = `http://localhost:3000/login`;
+          const redirectURL = `https://noteappfrontend.onrender.com/login`;
     
           // Redirect to the new URL
           window.location.href = redirectURL;
