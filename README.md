@@ -4,7 +4,7 @@
 
 This is a simple note-taking application with user authentication built using React.js, Flask, and PostgreSQL.
 
-For Front-﻿end Code : https://github.com/vedantpatel07756/Noteapp-frontend
+For Front-﻿end Code : https://github.com/vedantpatel07756/Noteapp-frontend <br>
 For Back-end Code : https://github.com/vedantpatel07756/Noteapp-backend
 ## Live Demo
 
